@@ -1,0 +1,23 @@
+<% blazer_title "Querys" %>
+
+<p style="float: right;"><%= link_to "New Query", new_query_path, class: "btn btn-info" %></p>
+<%= render partial: "blazer/nav" %>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Query</th>
+      <th>Oluşturan</th>
+      <th>Tarih</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @queries.each do |query| %>
+      <tr>
+        <td><%= link_to query.name, query %></td>
+        <td><%= query.creator %></td>
+        <td><%= query.created_at %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

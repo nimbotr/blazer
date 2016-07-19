@@ -1,13 +1,13 @@
 module Blazer
-  class BaseController < ApplicationController
+  class BaseController < ::ApplicationController
     # skip all filters
-    skip_filter *_process_action_callbacks.map(&:filter)
+    # skip_filter *_process_action_callbacks.map(&:filter)
 
-    protect_from_forgery with: :exception
+    # protect_from_forgery with: :exception
 
-    if ENV["BLAZER_PASSWORD"]
-      http_basic_authenticate_with name: ENV["BLAZER_USERNAME"], password: ENV["BLAZER_PASSWORD"]
-    end
+    # if ENV["BLAZER_PASSWORD"]
+    #   http_basic_authenticate_with name: ENV["BLAZER_USERNAME"], password: ENV["BLAZER_PASSWORD"]
+    # end
 
     if Blazer.before_action
       before_action Blazer.before_action
