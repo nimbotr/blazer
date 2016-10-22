@@ -10,12 +10,12 @@
 //= require ./daterangepicker
 //= require ./Chart.js
 //= require ./chartkick
-//= require ./ace/ace
-//= require ./ace/ext-language_tools
-//= require ./ace/theme-twilight
-//= require ./ace/mode-sql
-//= require ./ace/snippets/text
-//= require ./ace/snippets/sql
+// require ./ace/ace
+// require ./ace/ext-language_tools
+// require ./ace/theme-twilight
+// require ./ace/mode-sql
+// require ./ace/snippets/text
+// require ./ace/snippets/sql
 //= require ./Sortable
 //= require ./bootstrap
 
